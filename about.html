@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/Style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>About</title>
+    <style>
+        input[type=text] {
+        width:100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;
+        border:3px solid rgb(235, 230, 230);-webkit-transition: 0.5s;transition: 0.5s;outline: none;
+        }
+        input[type=text]:focus{border:3px solid rgb(252, 249, 249)}
+      
+    
+      
+        body
+        {
+          margin: 0;padding: 0;font-family: sans-serif;
+        }
+        .box
+        {
+          position: absolute;transform: translate(-50%,-50%);width: 400px;top: 55%;right:0;
+          padding: 40px;background: rgba(0, 0, 0, 0);box-sizing: border-box;box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
+          border-radius: 10px;
+      }
+      .box h2
+      {
+        margin: 0 0 30px; padding: 0; color: #f8f402; text-align: center;font-size: 50px; ;
+      }
+      .box .inputBox
+      { 
+        position: relative;
+      
+      }
+      
+      .box .inputBox label
+      {
+        position: absolute;top: 0;left: 0;padding: 10px 0;font-size: 16px;
+        color: rgb(226, 59, 59);letter-spacing: 2;pointer-events: none;
+        transition: 0.5s;
+        }
+      .box .inputBox input:focus ~ label,
+      .box .inputBox input:valid ~ label
+        {
+          top: -20px;left: 0;color: #298c43;font-size: 12px;
+        }
+        .box button[type="submit"]
+        {
+          background: transparent;border: none; outline: none;color: #fff;background:  #298c43;
+          padding: 10px 20px;cursor: pointer;border-radius: 5px;
+        }
+        .restPage{background: url('login.jpg') no-repeat center;padding-bottom: 1280px;}
+      
+        </style>
+</head>
+<body>
+    <div class="nav_area">
+        <header class="main_head">
+          <div class="wrapper">
+            <div class="logo">
+              <a href="index.html">Lifestyle Store</a>
+            </div>
+            <nav>
+              <a href="index.html">Home</a>
+              <a href="apparels.html">Shop</a>
+              <a href="about.html">About</a>
+              <a href="signup.html">Register</a>
+            </nav>
+          </div>
+        </header>
+        
+      </div>
+      
+      <div class="restPage">
+      <div class="box">
+        <h2>Get In Touch</h2>
+          <form >
+            <div class="InputBox">
+          <label for="name" style="font-size: 30px;font-family: serif;color: #000000;"><b>Full Name</b></label>
+          <input type="text" id="name" name="sname" placeholder="Enter Name" required>
+        
+          <label for="email" style="font-size: 30px;font-family: serif;color: #0f0f0f;"> <b>Email Id</b></label>
+          <input type="text" id="email" name="email" placeholder="ex:    sam@xyz.com" required>
+        
+          <label for="sub" style="font-size: 30px;font-family: serif;color: #030303;"><b>Subject</b></label>
+          <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        
+          <label for="Message" style="font-size: 30px;font-family: serif;color: #070707;"> <b>Message</b></label>
+          <textarea name="message" id="message" type="text" placeholder="Enter your message here" rows="5" cols="40"></textarea>
+        
+          <button type="submit" onclick="window.alert('Query Sent, thanks!')">Send Message</button>
+        </div>
+        </form>
+        </div>
+        <div style="float: left;width: 500px;height: 700px;background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));margin-top: 200px;">
+            <p style="font-family:sans-serif;font-size: 30px;color: rgb(255, 255, 255);text-align: center;">
+            <b>Welcome to Lifestyle Store, your number one source for all Styling Products.<br>
+               We're dedicated to giving you the very best of Products, with a focus on Comfort Shopping, <br>
+               Easy Returns,Simple Browsing and much more.<br>
+              Founded in 2021 by ISI Montreal, Lifestyle Store has come a long way<br> from its beginnings
+               in a Dorm Room.
+              We hope you enjoy our products as much as we enjoy offering them to you.<br>
+               If you have any questions or comments, please don't hesitate to contact us.<br>
+              
+              Sincerely,Lifestyle Store <br></b>
+            </p>
+        </div>
+    </div>
+<footer style="padding:10px 0;background-color: #777474; color:#f8efef;bottom: 0;width: 100%;">
+  <div class="foot">
+
+    Copyright © Lifestyle Store. All Rights
+Reserved and Contact Us: +91 90000 00000
+<div class="social">
+  <img src="facebook.png" alt="facebook" height="30px">
+  <img src="twitter.png" alt="twitter" height="30px">
+  <img src="insta.png" alt="instagram" height="30px">
+</div>
+</div>
+</footer>
+</body>
+</html>

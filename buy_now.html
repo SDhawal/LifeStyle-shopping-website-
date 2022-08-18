@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payment</title>
+        <!-- External css file -->
+        <link rel="stylesheet" href="css/Style.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+      </head>
+<body width="100%">
+    <div class="nav_area">
+        <header class="main_head">
+          <div class="wrapper">
+            <div class="logo">
+              <a href="index.html">Lifestyle Store</a>
+            </div>
+            <nav>
+              <a href="index.html">Home</a>
+              <a href="apparels.html">Shop</a>
+              <a href="about.html">About</a>
+              <a href="signup.html">Register</a>
+            </nav>
+          
+          </div>
+          
+        </header>
+    </div>
+<table width="100%" style="margin-top: 100px;margin-left: 10px;">
+    <tr>
+        <td width="50%">
+            <fieldset>
+            <h1 style="margin-left: 10px;margin-bottom: 30px;text-align: left;"><legend>Payment details</legend></h1>
+            <form action="order_placed.html">
+            
+            <fieldset style="float:left;text-align: left;width:40%"><legend><h3>Card details:</h3></legend>
+            
+            <i class='fab fa-cc-visa' style='font-size:24px;color: darkblue;'></i>
+            <i class='fab fa-cc-paypal' style='font-size:24px;color: orange;'></i>
+            <i class='fab fa-cc-amex' style='font-size:24px;color:blue;'></i>
+            <i class='fab fa-cc-mastercard' style='font-size:24px;color: red;'></i>
+            <br><br>
+            <label for="cname">Name on Card</label><br>
+            <input type="text" id="cname" name="cardname" placeholder="King of Punjab" required><br><br>
+            
+            <label for="ccnum">Credit card number</label><br>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required><br><br>
+            
+            <label for="expmonth">Exp Month</label><br>
+            <input type="text" id="expmonth" name="expmonth" placeholder="09" required><br><br>
+            
+            <label for="expyear" width="50%">Exp Year</label><br>
+            <input type="text" id="expyear" name="expyear" placeholder="2025" required><br><br>
+
+            <label for="cvv">CVV</label><br>
+            <input type="text" id="cvv" name="cvv" placeholder="352" >
+            <br><br> <br> <br>   
+            
+        </fieldset>
+    
+        
+        
+        <fieldset style="float: right;width:50%;text-align: left;">
+            <legend><h3>Billing Address:</h3></legend>
+            <label for="fname" ><i class="fa fa-user"></i> Full Name</label><br>
+            <input type="text" id="fname" name="Firstname" placeholder="King of Punjab" required><br><br>
+            <label for="email"><i class="fa fa-envelope"></i> Email</label><br>
+            <input type="text" id="email" name="Email" placeholder="punjab@example.com" required><br><br>
+            <label for="adr"><i class="fa fa-address-card"></i> Address</label><br>
+            <textarea id="adr" name="Address" placeholder="542 W. 15th Street" required></textarea><br><br>
+            
+            <label for="city"><i class="fas fa-city"></i> City</label><br>
+            <input type="text" id="city" name="City" placeholder="Amritsar" required><br><br>
+            <label for="state">State</label><br>
+            <input type="text" id="state" name="State" placeholder="Punjab" required><br><br>
+            <label for="zip">Zip</label><br>
+            <input type="text" id="zip" name="Zip" placeholder="10001" required><br><br>
+        </fieldset>
+        <center>
+            <input type="submit" value="Continue to Checkout" style="width: 100%; background-color: rgb(182, 185, 216);font-weight:bold; color:white;border-style:hidden;padding-top:10px;padding-bottom: 10px;margin-top: 25px;">
+        </center>
+        
+        </form>
+        <br>
+
+    </fieldset>
+        </td>
+
+        <td width="50%">
+            <div  style="border-color:black;text-align: center;" >
+                <img src="shirt3.jpg" alt="Shirts" width="300px" height="300px" id="product" style="border-style: solid;"><br><br>
+                <div class="caption"> <h2 id="brand"> Max </h2><br>
+                  <h4 id="price">Price:₹ 2,360/- </h4>
+                </div>
+              </div>
+        </td>
+    </tr>
+</table>
+
+
+<footer style="padding:10px 0;background-color: #777474; color:#f8efef;bottom: 0;width: 100%;margin-top:3%;">
+    <div class="foot">
+
+        Copyright © Lifestyle Store. All Rights
+Reserved
+<div class="social">
+    <img src="facebook.png" alt="facebook" height="30px">
+    <img src="twitter.png" alt="twitter" height="30px">
+    <img src="insta.png" alt="instagram" height="30px">
+  </div>
+  </div>
+</footer>
+
+</body>
+<script>
+    var p=window.location.href;
+    var arr=p.split('=');
+    var finarr=arr[1].split('-');
+    document.getElementById('product').setAttribute('src',''+finarr[0]);
+    if(finarr[1].includes('+'))
+    document.getElementById('brand').textContent=finarr[1].replaceAll('+',' ');
+    else
+    document.getElementById('brand').textContent=finarr[1];
+    document.getElementById('price').textContent='Price:₹ '+finarr[2]+'/-';
+</script>
+</html>

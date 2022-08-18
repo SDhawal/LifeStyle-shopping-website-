@@ -1,0 +1,227 @@
+body{
+  text-align: center;
+}
+.wrapper{width: 1170px;margin: 0 auto;}
+.main_head{height: 60px;background: rgb(14, 13, 13);width: 100%;z-index: 12; position: fixed;top:0;}
+.logo{width:30%;float: left;line-height: 60px;}
+.logo a{text-decoration: none;font-size: 20px;font-family:Verdana, Geneva, Tahoma, sans-serif;color: cornsilk;letter-spacing: 2px;}
+.logo a:hover{
+  font-size: 22px;color: #ffffff;
+}
+nav{float: right;line-height: 60px;}
+nav a{text-decoration: none;font-family:Verdana, Geneva, Tahoma, sans-serif;color: cornsilk;letter-spacing: 4px; font-size: 13px;
+margin: 0 10px;}
+nav a:hover{color:#ffffff ;font-size: 15px;}
+.nav_area{width: 100%;}
+#banner-image{padding-top: 75px;padding-bottom: 50px;text-align: center;color: #f8f8f8;height:510px;background: url('intro-bg_1.jpg') no-repeat center center;}
+#banner_content{position: relative;padding-top: 6%;padding-bottom: 6%;margin-top: 4%;margin-left: 25%;margin-right: 20%;margin-bottom: 1%;background-color: rgba(0, 0, 0, 0.7);max-width: 660px;}
+#banner_login{position: relative;padding-top: 6%;padding-bottom: 6%;margin-top: 14%;margin-left: 20%;margin-right: 20%;margin-bottom: 14%;max-width: 660px;}
+#banner-login{padding-top: 75px;padding-bottom: 50px;text-align: center;color: #f8f8f8;background-size: cover;background: url('login.jpg') no-repeat center center;}
+
+#banner_signup{position: relative;padding-top: 6%;padding-bottom: 6%;margin-top: 14%;margin-left: 20%;margin-right: 20%;margin-bottom: 14%;max-width: 660px;}
+#banner-setting{padding-top: 75px;padding-bottom: 50px;text-align: center;color: #f8f8f8;background-size: cover;background: url('setting.jpg') no-repeat center center;}
+#banner_setting{position: relative;padding-top: 6%;padding-bottom: 6%;margin-top: 14%;margin-left: 20%;margin-right: 20%;margin-bottom: 14%;max-width: 660px;}
+.content {
+  min-height: 600px;
+}
+.banner-image{ padding-top: 20px;
+  margin-top: 90px;
+  padding-bottom: 50px;
+  padding-left: 230px;
+margin-bottom: 20px;
+text-align: center;
+color: #f8f8f8;
+}
+.btn_shop{
+  border-radius: 12px;
+  background-color: #8cc7c9;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.btn_shop:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #767a76;
+  color: white;
+                }
+
+.inner-banner-image{
+  padding-top: 12%;width: 80%; margin: auto;
+}
+.banner_content{
+  position: relative; padding-top: 6%;padding-bottom: 6%;overflow: hidden;margin-bottom: 12%;background-color: rgba(0, 0, 0, 0.7);
+  max-width: 660px;
+}
+.button{
+  color: #fff;background-color: #c9302c;border-color: #ac2925;box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  padding: 10px 16px;font-size: 18px;border-radius: 6px;
+}
+
+.container{width:90%; overflow:hidden;margin: auto;text-align: center;margin-top: 20px;}
+
+
+.items{
+  width: 30%;display: block;padding: 4px;margin-bottom: 20px;line-height: 1.42857143;background-color: #fff;
+  border: 1px solid #ddd; border-radius: 4px;float: left;margin-left: 2%;margin-top: 50px;
+}
+
+
+.thumbnail{display: block; max-width: 100%; height: 200px;margin-left: 30px;margin-top: 30px;}
+
+.caption{color:#000; padding:0px 10px 10px; font-weight: bold; text-align: center;}
+.foot{width:90%;padding: 5px;}
+.social{float: right;position: relative;padding-bottom: 10px;}
+
+/* for Register Page */
+
+.banner-signup{height: 100%;width:100%;padding-top: 75px;padding-bottom: 50px;text-align: center;color: #f8f8f8;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('signup.jpg');
+  background-position: center;background-size: cover;position:absolute;position:fixed;}
+
+.signup_form{
+              width: 300px;
+              height: 480px;
+              position: relative;
+              margin: 6% auto;
+              padding: 5px;
+              background: #ffffff;
+              overflow: hidden;
+            }
+.button_box{
+              width: 220px;
+              margin: 35px auto;
+              position: relative;
+              box-shadow: 0 0 20px 0 #6cd6dd;
+              border-radius: 30px;
+            }
+.toggle_btn{  color: #f0f1f1;
+              padding: 10px 30px;
+              cursor: pointer;
+              background: transparent;
+              border: 0;
+              outline: none;
+              position: relative;
+            }
+#btn_signup{
+              top: 0;
+              left: 0;
+              position: absolute;
+              width: 110px;
+              height: 100%;
+              background: linear-gradient(to right,#13558b,#6cd6dd);
+              border-radius: 30px;
+              transition: 0.5s;
+
+            }
+.social-icons{
+              margin: 30px auto;
+              text-align: center;
+            }
+.social-icons img{
+              width: 30px;
+              margin: 0 12px;
+              box-shadow: 0 0 20px 0 #6cd6dd;
+              cursor: pointer;
+              border-radius: 50%;
+            }
+.input_signup{
+              top: 180px;
+              position: absolute;
+              width: 280px;
+              transition: 0.5s;
+              }
+.input_field{
+              width: 100%;
+              padding: 10px 0;
+              margin: 5px 0;
+              border-top: 0;
+              border-left: 0;
+              border-right: 0;
+              border-bottom: 1px solid #13558b ;
+              outline: none;
+              background: transparent;
+              color: #13558b;
+            }
+.sign_submit{
+              width: 85%;
+              padding: 10px 30px;
+              cursor: pointer;
+              display: block;
+              margin: auto;
+              background: linear-gradient(to right,#13558b,#6cd6dd);
+              border: 0;
+              outline: none;
+              border-radius: 30px;
+            }
+.signup_check{margin: 30px 10px 30px 0 ;}
+span{color: #13558b;
+  font-size: 12px;
+  bottom: 43px;
+  right: 2px;
+  position: absolute;}
+#login{left: 10px;}
+#register{left: 450px;}
+/*--------------------------------------------------------- drop down */
+
+
+/*.sub_head{height: 90px;background: rgb(26, 25, 25);width: 100%;z-index: 12; position:relative;margin-top: 95px;}
+.sub_head{margin-top: 95px;}
+.drop_area{
+  top:150px;
+}
+*/
+.btn-primary{
+  background-color: #13558b;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+}
+
+
+.dropbtn {
+  background-color: #ffffff;
+  color: rgb(12, 11, 11);
+  padding: 16px;
+  font-size: 16px;
+  padding-top: 46px;
+  border: none;
+  font-family: "Times New Roman",  serif;
+  font-size: large;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  align-content: center;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  font-family: "Arial", serif;
+  font-size:small;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(218, 224, 231);color: black;font-weight: bold;text-decoration: none;}
+
+.dropdown:hover .dropdown-content {display: block;text-decoration: none;}
+
+.dropdown:hover .dropbtn {background-color: #ffffff; border-bottom: 2px solid rgb(34, 32, 32);}

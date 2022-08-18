@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%;margin:0">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Placed</title>
+</head>
+<body height='100%' style="color:white;background: url('Banner-image-5.jpg') no-repeat center center;background-size: cover;opacity:100;" >
+    
+    <center style="margin-right: 500px ;">
+    
+        <fieldset style="width: 400px;margin-top: 50px;">
+            <legend"><h1>Order Details</h1></legend>
+            <span id='details' >Payment mode: Online</span>
+        </fieldset>
+       <br><br><br><br>
+        <h1 >Order placed successfully !!</h1>
+    <h1>Hope you enjoyed shopping with us. Visit Again!!</h1>
+    </center>
+
+</body>
+<script>
+    var arr=window.location.href;
+    arr=arr.split('cvv=');
+    var finarr=arr[1];
+    finarr=finarr.replaceAll('=',': ');
+    finarr=finarr.replaceAll('%40','@');
+    finarr=finarr.replaceAll('+',' ');
+    finarr=finarr.split('&');
+    
+    var b=document.querySelector('#details');
+    var str='';
+
+    for(var i=0;i<finarr.length;i++){
+        str+=finarr[i]+'<br><br>';
+        
+    }
+    b.innerHTML=str;
+
+</script>
+</html>
